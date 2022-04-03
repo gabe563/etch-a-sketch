@@ -102,8 +102,10 @@ function mouseTrail(e){
 
   if(currFill === 'color'){
     e.target.style.backgroundColor = currColor;
+    e.target.style.opacity = 1;
   } else if(currFill === 'rainbow'){
     e.target.style.backgroundColor = randomColor();
+    e.target.style.opacity = 1;
   } else if(currFill === 'shading'){
     boxContainer.style.backgroundColor = '#363636';
     e.target.style.opacity = e.target.style.opacity - 0.2;
